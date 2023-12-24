@@ -3,9 +3,27 @@
 
 Console.Write("Enter a number 1: ");
 int b1 = int.Parse(Console.ReadLine()!);
-int count = -b1;
-while (count <= b1)
+if (b1 > 0)
 {
-    Console.Write(count+" ");
-    count++;
+    int count = -b1;
+    while (count <= b1)
+    {
+        Console.Write(count+" ");
+        count++;
+        
+    }
+}
+else if (b1 < 0)
+{
+    int count = -b1;
+    while (count >= b1)
+    {
+        Console.Write(-count+" ");
+        count--;
+        
+    }
+}
+else
+{
+    Console.Write("Your nomber - ZERO!");
 }
