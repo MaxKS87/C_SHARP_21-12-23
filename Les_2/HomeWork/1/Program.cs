@@ -4,14 +4,8 @@
 Console.Write("Проверим, кратно ли число одновременно 7 и 23\nВведите число: ");
 int num = Convert.ToInt32(Console.ReadLine ());
 if ((num % 7 == 0) && (num % 23 == 0) && (num != 0))
-{
     Console.Write("Да, число одновременно кратно 7 и 23\n");
-}
 else if (num == 0)
-{
     Console.Write("Вы ввели `ноль`. Ответ очевиден :)\n");
-}
 else
-{
     Console.Write("Нет, введённое число не удовлетворяет условию\n");
-}
