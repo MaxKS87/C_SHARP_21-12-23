@@ -14,7 +14,8 @@ if (element > 0)
         set_of_num = element % 10 + "," + set_of_num;
         element = element / 10;
     }
-    Console.Write(set_of_num + "\n");
+    // set_of_num = set_of_num.Trim({ ',' });
+    Console.Write(set_of_num.Trim(',') + "\n");
 }
 else
     Console.Write("Ну просили же ввести НАТУРАЛЬНОЕ число...\n");
