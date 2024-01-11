@@ -31,7 +31,7 @@ namespace My_3_1
             if ((tester > 0) && (tester % 10 == 2) || (tester % 10 == 3) || (tester % 10 == 4) && (tester != 12) && (tester != 13) && (tester != 14))
                 System.Console.WriteLine("Да. {0} раза число {1} встречается в массиве.", tester, My_check);
             else if (tester == 0)
-                System.Console.WriteLine("Число {1} не встречается в массиве.", My_check);
+                System.Console.WriteLine("Число " + My_check + " не встречается в массиве."); // Тут появлялась ошибка. Почему?
             else
                 System.Console.WriteLine("Да. {0} раз число {1} встречается в массиве.", tester, My_check);
         }
